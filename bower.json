@@ -1,0 +1,27 @@
+{
+  "name": "dec112-api",
+  "version": "1.0.9",
+  "description": "Deaf Emergency Call (DEC112) Registration and Configuration Service",
+  "main": "index.js",
+  "keywords": [
+    "deaf",
+    "emergency"
+  ],
+  "authors": [
+    "richard.prinz@min.at"
+  ],
+  "license": "GPL-3.0-only",
+  "homepage": "http://www.min.at/prinz",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "requirejs": "^2.3.4"
+  }
+}

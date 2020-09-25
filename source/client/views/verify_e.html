@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DEC112-API services</title>
+
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="DEC112 API services">
+    <meta name="author" content="Richard Prinz">
+
+    <link type="text/css" href="assets/css/app.css" rel="stylesheet">
+	<script type="text/javascript" charset="utf8" src="assets/js/app.js"></script>
+</head>
+<body style="background-color:lightgray;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-centered" style="background-color:white;padding:15px;margin-top:20px;">
+                <div style="text-align:center;">
+                    <img src="assets/images/dec112-text-long.jpg" width="280" height="280">
+                    <p/>
+                    <h2><%=verify_email_text%></h2>
+                    <p/>
+                    <form>
+                        <div class="form-group">
+                            <label for="email"><%=verify_page_email_field%></label>
+                            <input id="email" type="email" class="form-control"
+                                value="${email}" readonly>
+                        </div>
+                        <div id="alert" style="display:none;"
+                            class="alert alert-danger alert-dismissible" role="alert">
+                            <button type="button" class="close"
+                                onclick="$('#alert').hide();" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <span><%=verify_page_email_token_invalid%></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="token"><%=verify_page_email_token%></label>
+                            <input id="token" type="text" class="form-control"
+                                value="${token}"
+                                placeholder="<%=verify_page_email_token_placeholder%>">
+                        </div>
+                        <button type="button" class="btn btn-danger" style="width:280px"
+                            onclick="App.verify_email(token.value, email.value);">
+                            <%=verify_email_button%>
+                        </button>
+                    </form>
+                    <p/><br>
+                    <%=verify_page_footer%>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

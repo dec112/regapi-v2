@@ -1,0 +1,52 @@
+
+body {
+	margin: 0px;
+}
+
+html, body{
+	/*height: 100%;*/
+}
+
+.container {
+	/*height: 100%;*/
+}
+
+.splash {
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.page-header {
+  /*background-color: #89bf04;*/
+  background-color: rgb(26, 188, 156);
+  padding: 14px;
+}
+
+.FullHeightPanel {
+	/* Firefox */
+	height: -moz-calc(100vh - 120px);
+	/* WebKit */
+	height: -webkit-calc(100vh - 120px);
+	/* Opera */
+	height: -o-calc(100vh - 120px);
+	/* Standard */
+	height: calc(100vh - 120px);
+}
+
+.main-bar th,td {
+	padding: 1px;
+}
+
+.btn-main-bar {
+	width:100px;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
